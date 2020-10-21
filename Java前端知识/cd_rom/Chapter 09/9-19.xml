@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css"?>
+<students xmlns:HTML="http://www.w3.org/Profiles/XHTML-transitional">
+   <student>
+      <name>Tom</name>
+      <sex>male</sex>
+      <HTML:img src="img.jpg" width="200" height="100"/>
+   </student>
+</students>

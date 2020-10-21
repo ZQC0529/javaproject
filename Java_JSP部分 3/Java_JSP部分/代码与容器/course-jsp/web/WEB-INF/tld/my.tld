@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+        http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>my</short-name>   <!-- 标签库简称 -->
+    <uri>http://org.zuel.edu.cn/mytag</uri>   <!-- 与web.cml配置对应 -->
+    <tag>
+        <name>if</name>   <!-- 标签名 -->
+        <tag-class>org.zuel.course.ch06.tag.IfTag</tag-class>   <!-- 标签处理类 -->
+        <body-content>scriptless</body-content>
+        <attribute>   <!-- 标签的属性 -->
+            <name>test</name>   <!-- 属性名 -->
+            <required>true</required>   <!-- 是否必填 -->
+            <rtexprvalue>true</rtexprvalue>   <!-- 是否接收运算结果，如EL -->
+            <type>boolean</type>   <!-- 属性类型 -->
+        </attribute>
+    </tag>
+</taglib>

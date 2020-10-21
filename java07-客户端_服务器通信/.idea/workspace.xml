@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5773138-06c7-4418-91e4-7b257240e53d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TgEj0iMja5op4tV4VDkgvrYTD6" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-01" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.socketClient">
+    <configuration name="File_Op" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Communicate.File_Op" />
+      <module name="java07-客户端_服务器通信" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Communicate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="socketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Communicate.socketClient" />
+      <module name="java07-客户端_服务器通信" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Communicate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="socketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Communicate.socketServer" />
+      <module name="java07-客户端_服务器通信" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Communicate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.socketClient" />
+        <item itemvalue="Application.socketServer" />
+        <item itemvalue="Application.File_Op" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5773138-06c7-4418-91e4-7b257240e53d" name="Default Changelist" comment="" />
+      <created>1573873469100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573873469100</updated>
+      <workItem from="1573873472413" duration="1436000" />
+      <workItem from="1574054819918" duration="1335000" />
+      <workItem from="1574063903175" duration="8217000" />
+      <workItem from="1574307012466" duration="1863000" />
+      <workItem from="1574331453716" duration="65000" />
+      <workItem from="1574331971835" duration="191000" />
+      <workItem from="1574339341175" duration="2961000" />
+      <workItem from="1574476528345" duration="51000" />
+      <workItem from="1601526289184" duration="35000" />
+      <workItem from="1601532776046" duration="95000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

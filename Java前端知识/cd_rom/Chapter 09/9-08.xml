@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+<?xml-stylesheet type="text/xsl" href="9-09.xsl"?>
+<persons>
+  <person>
+      <name>周润发</name>
+      <age>25</age>
+      <tel>66666666</tel>
+  </person>
+  <person>
+      <name> 周慧敏</name>
+      <age>26</age>
+      <tel>66666667</tel>
+  </person>  
+  <person>
+      <name>周星弛</name>
+      <age>28</age>
+      <tel>66666669</tel>
+  </person>
+</persons>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="lib/jquery-1.2.6.min.js" type="text/javascript"></script>
+
+    <script src="lib/styleswitch.js" type="text/javascript"></script>
+
+    <script src="lib/equalcolumns.js" type="text/javascript"></script>
+
+    <script src="js/tool.js" type="text/javascript"></script>
+
+    <script src="js/custom.js" type="text/javascript"></script>
+
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/fixed/2_1.css"
+        title="fixed/2_1.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/fixed/2_2.css"
+        title="fixed/2_2.css" media="screen" />
+    <link href="CSS/LayoutCss/fixed/3_1.css" rel="stylesheet" type="text/css" title="fixed/3_1.css" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/fixed/3_2.css"
+        title="fixed/3_2.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/fixed/3_3.css"
+        title="fixed/3_3.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/2_1.css"
+        title="liquid/2_1.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/2_2.css"
+        title="liquid/2_2.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_1.css"
+        title="liquid/3_1.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_2.css"
+        title="liquid/3_2.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_3.css"
+        title="liquid/3_3.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_4.css"
+        title="liquid/3_4.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_5.css"
+        title="liquid/3_5.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_6.css"
+        title="liquid/3_6.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_7.css"
+        title="liquid/3_7.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_8.css"
+        title="liquid/3_8.css" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="CSS/LayoutCss/liquid/3_9.css"
+        title="liquid/3_9.css" media="screen" />
+    <link href="CSS/default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="maincontainer">
+        <div id="topsection">
+            <div class="innertube">
+                <h1>
+                    CSS Layout
+                </h1>
+            </div>
+            <div style="text-align: right;">
+            <input type="checkbox" id="showpic" checked="checked" /><label for="showpic">显示图示</label>
+                <input id="fixedlayout" type="radio" name="layout" value="fixed" /><label for="fixedlayout">固定布局</label>
+                <input id="liquidlayout" type="radio" name="layout" value="liquid" /><label for="liquidlayout">流布局</label> <select
+                    id="SelectColumnsFixed">
+                    <option value="">===========选择===========</option>
+                    <option value="fixed/2_1.css">Fixed Layout #2_1- (Fixed-Fixed)</option>
+                    <option value="fixed/2_2.css">Fixed Layout #2_2- (Fixed-Fixed)</option>
+                    <option value="fixed/3_1.css">Fixed Layout #3_1- (Fixed-Fixed-Fixed)</option>
+                    <option value="fixed/3_2.css">Fixed Layout #3_2- (Fixed-Fixed-Fixed)</option>
+                    <option value="fixed/3_3.css">Fixed Layout #3_3- (Fixed-Fixed-Fixed)</option>
+                </select>
+                <select id="SelectColumnsLiquid">
+                    <option value="">===========选择===========</option>
+                    <option value="liquid/2_1.css">Liquid Layout #2_1- (Fixed-Fluid)</option>
+                    <option value="liquid/2_2.css">Liquid Layout #2_2- (Fluid-Fixed)</option>
+                    <option value="liquid/3_1.css">Liquid Layout #3_1- (Fixed-Fluid-Fixed)</option>
+                    <option value="liquid/3_2.css">Liquid Layout #3_2- (Fixed-Fixed-Fixed)</option>
+                    <option value="liquid/3_3.css">Liquid Layout #3_3- (Fixed-Fixed-Fixed)</option>
+                    <option value="liquid/3_4.css">Liquid Layout #3_4- (Fluid-Fixed-Fixed)</option>
+                    <option value="liquid/3_5.css">Liquid Layout #3_5- (Fluid-Fluid-Fixed)</option>
+                    <option value="liquid/3_6.css">Liquid Layout #3_6- (Fluid-Fluid-Fixed)</option>
+                    <option value="liquid/3_7.css">Liquid Layout #3_7- (Fixed-Fixed-Fluid)</option>
+                    <option value="liquid/3_8.css">Liquid Layout #3_8- (Fluid-Fluid-Fixed)(不推荐)</option>
+                    <option value="liquid/3_9.css">Liquid Layout #3_9- (Fluid-Fluid-Fluid)(不推荐)</option>
+                </select>
+            </div>
+        </div>
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertube" id="show">
+                 <!--   <b>Content Column: </b>-->
+                    <img src="images/固定布局索引.jpg" align="middle"  id="pic1"/>
+<img src="images/流布局索引.jpg" style="display:none;" align="middle"  id="pic2"/>
+                    <script type="text/javascript">                        //        filltext(10);
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <div id="leftcolumn">
+            <div class="innertube">
+                <b>Left Column: </b>
+
+                <script type="text/javascript">                    filltext(20)</script>
+
+            </div>
+        </div>
+        <div id="rightcolumn">
+            <div class="innertube">
+                <b>Right Column: </b>
+
+                <script type="text/javascript">                    filltext(15)</script>
+
+            </div>
+        </div>
+        <div id="footer">
+            <a href="http://www.dynamicdrive.com/style/">Dynamic Drive CSS Library</a></div>
+    </div>
+</body>
+</html>

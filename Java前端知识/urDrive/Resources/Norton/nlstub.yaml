@@ -1,0 +1,29 @@
+PartnerID: Fuhu
+
+Experience: 
+  US: 176
+  CA: 176
+  GB: 176
+  IE: 176
+  AU: 176
+  NZ: 176
+  FR: 476
+  DE: 476
+  NE: 476
+  IT: 476
+  ES: 476
+  CN: 476
+  HK: 476
+  BR: 476
+  TW: 476
+  DEFAULT: 476
+
+Installer Location:
+  176: /premium_services/helpware/2.0/176/installer/PCCheckupInstaller.exe	
+  476: /premium_services/helpware/2.0/476/installer/PCCheckupInstaller.exe
+
+Show EULA: false
+
+Scheduled Task Delay: 0.5 # hours
+
+Max Attempts: 100

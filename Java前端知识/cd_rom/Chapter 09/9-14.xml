@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<!DOCTYPE 联系人 [
+<!ELEMENT 联系人 (姓名, EMAIL)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT EMAIL (#PCDATA)>
+]>
+<联系人>
+    <姓名>张三</姓名>
+<EMAIL>zhang@aaa.com</EMAIL>
+<地址>中国北京</地址>
+</联系人>

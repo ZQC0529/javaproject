@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+	<SCRIPT LANGUAGE="JavaScript">
+	function openNewWindow(szMethod) {
+	   if (szMethod == "modal") {
+		  	window.showModalDialog("6-06.htm",myform.txt,
+			"dialogTop:100px;dialogLeft:100px;dialogWidth:200px;dialogHeight:400px;scroll:1;status:0;");
+	   }
+	   else if (szMethod == "modeless") {
+		  	window.showModalDialog("6-06.htm",myform.txt,
+			"dialogTop:100px;dialogLeft:100px;dialogWidth:200px;dialogHeight:400px;scroll:1;status:0;");
+	   }
+	   else {
+		  window.open("6-05.htm");
+	   }   
+	}
+	</SCRIPT>
+</HEAD>
+	<BODY>
+	<form name="myform">
+		<INPUT type="button" value="window.open"
+		onclick="openNewWindow('normal');"><BR>
+		<INPUT type="button" value="showModalDialog"
+		onclick="openNewWindow('modal');"><BR>
+		<INPUT type="button" value="showModelessDialog"
+		onclick="openNewWindow('modeless');"><br>
+        <input type="text" name="txt">
+   <form>
+	</BODY>
+</HTML> 

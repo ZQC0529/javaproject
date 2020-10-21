@@ -1,0 +1,162 @@
+<HTML>
+	<HEAD>
+		<STYLE>
+			.colorTBody2	{background-color:#E7ECF9	}
+		</STYLE>
+		<SCRIPT language="JavaScript">
+		function autocheck(obj)
+		{
+			//首先调用全部取消选中
+			var oInput = obj.cells(0).all.tags("input");
+			oInput[0].checked = (oInput[0].checked)?false:true;
+		}
+		function chkclick(obj)
+		{
+			obj.checked=!obj.checked;
+		}
+		</SCRIPT>
+</HEAD>
+<body>
+  <TABLE id="mytable1" height="8%" cellSpacing="0">
+    <TR onclick="autocheck(this)" value="tr"> 
+	  <TD class="colorTBody2" id=1 value="td"><input type="checkbox"></TD>
+      <TD class="colorTBody2">aaa</TD>
+      <TD class="colorTBody2">bbb<input type="hidden" name="txt" value=""></TD>
+      <TD class="colorTBody2">bbbb</TD>
+      <TD class="colorTBody2">aaaa</TD>
+      <TD class="colorTBody2">dddd</TD>
+    </TR>
+    <TR onclick="autocheck(this)"> 
+	  <TD class="colorTBody2" id=1 ><input type="checkbox"> </TD>
+      <TD class="colorTBody2">aaa</TD>
+      <TD class="colorTBody2">bbb<input type="hidden" name="txt" value=""></TD>
+      <TD class="colorTBody2">bbbb</TD>
+      <TD class="colorTBody2">aaaa</TD>
+      <TD class="colorTBody2">dddd</TD>
+    </TR>
+</TABLE>
+<SCRIPT language=javascript>
+//选中处理
+window.mytable1.onclick = select;
+
+var lastSelection = null;
+function select(element)
+{
+
+  var e, r, c;
+  if (element == null)
+  {
+    e = window.event.srcElement;
+  }
+  else
+  {
+    e = element;
+  }
+  if ((window.event.Button=1) || (e.tagName == "TR"))
+  {
+    r = findRow(e);
+    if (r != null )
+    {
+      if (lastSelection != null)
+      {
+        deselectRowOrCell(lastSelection);
+      }
+      selectRowOrCell(r);
+      lastSelection = r;
+
+    }
+  }
+  window.event.cancelBubble = true;
+}
+//取消选中函数
+function cancelSelect() {
+
+  if (window.event.srcElement.tagName != "BODY")
+    return;
+
+  if (lastSelection != null)
+  {
+    deselectRowOrCell(lastSelection);
+    lastSelection = null;
+  }
+}
+document.onclick = cancelSelect;
+//选中一行
+function findRow(e)
+{
+  if (e.tagName == "TR")
+  {
+    return e;
+  }
+  else if (e.tagName == "BODY")
+  {
+    return null;
+  }
+  else
+  {
+    return findRow(e.parentElement);
+  }
+}
+//选中一行中的一列
+function findCell(e)
+{
+  if (e.tagName == "TD")
+  {
+   return e;
+  }
+  else if (e.tagName == "BODY")
+  {
+	   return null;
+  }
+  else
+  {
+   return findCell(e.parentElement);
+  }
+}
+//取消选中一行，去掉颜色
+function deselectRowOrCell(r)
+{
+ var nDefaultRow = 0;
+ if(r.cells(0).id != 0)//不修改表的头部
+ {
+  for (var i=0 ;i<r.cells.length;i++)//恢复优先的Css
+  {
+       r.cells[i].className = "ColorTBody2";
+  }
+    r.runtimeStyle.color = "";
+    r.runtimeStyle.backgroundColor="";
+    eHyperLink = document.all.tags ("a");
+    for(var i=0;i<eHyperLink.length;i++)
+    {
+      if( String(eHyperLink[i].id)==String(r.cells(0).id) )
+      {
+        eHyperLink[i].style.color = "";
+      }
+    }
+ }
+}
+//选中一行，字体变蓝
+function selectRowOrCell(r)
+{
+ if(r.cells(0).id != 0)//不修改表的头部
+ {
+ 	for (var i=0 ;i<r.cells.length;i++)
+  	{
+    	r.cells[i].className = "";//去掉优先的Css
+  	}
+  	r.runtimeStyle.backgroundColor="midnightblue";
+  	r.runtimeStyle.color = "white";
+
+    eHyperLink = document.all.tags ("a");
+    for (var i=0;i<eHyperLink.length;i++)
+    {
+    	if( String(eHyperLink[i].id)==String(r.cells(0).id))
+        {
+          eHyperLink[i].style.color = "white";
+        }
+    }
+ }
+}
+</SCRIPT>
+</BODY>
+</HTML>

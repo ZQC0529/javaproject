@@ -1,0 +1,16 @@
+﻿<Context path="/exam" docBase="F:\book\JSP\testonline\WebRoot" debug="5" reloadable="true" crossContext="true">
+	<Logger className="org.apache.catalina.logger.FileLogger"
+      prefix="localhost_exam_log." suffix=".txt"
+      timestamp="true"/> <!-- 定义log文件 -->
+	<Resource
+    name="jdbc/exam"
+    type="javax.sql.DataSource"
+    password=""
+    driverClassName="com.mysql.jdbc.Driver"
+    maxIdle="2"
+    maxWait="5000"
+    username="root"
+    url="jdbc:mysql://localhost:3306/exam?useUnicode=true&amp;characterEncoding=gbk"
+    maxActive="4"/>
+
+</Context>

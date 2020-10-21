@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Schema xmlns="urn:schemas-microsoft-com:xml-data"
+	xmlns:dt="urn:schemas-microsoft-com:datatypes">
+<ElementType name="books">
+<element type="book"/>
+</ElementType>
+<ElementType name="book" dt:type="int"/>
+</Schema>
+

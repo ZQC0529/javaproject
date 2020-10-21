@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://org.zuel.edu.cn/mytag</taglib-uri>
+            <taglib-location>/WEB-INF/tld/my.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/fmt</taglib-uri>
+            <taglib-location>/WEB-INF/tld/fmt.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/x</taglib-uri>
+            <taglib-location>/WEB-INF/tld/x.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/sql</taglib-uri>
+            <taglib-location>/WEB-INF/tld/sql.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/functions</taglib-uri>
+            <taglib-location>/WEB-INF/tld/fn.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>org.zuel.course.ch05.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/home05.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>LoginFilter06</filter-name>
+        <filter-class>org.zuel.course.ch06.interceptor.LoginInterceptor</filter-class>
+        <init-param>
+            <description>白名单</description>
+            <param-name>noCheck</param-name>
+            <param-value>/06/login.jsp,/06/login,/06/myTag.jsp</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter06</filter-name>
+        <url-pattern>/06/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.zuel.course.ch05.LoginListener</listener-class>
+    </listener>
+    
+    <context-param>
+        <param-name>success_view</param-name>
+        <param-value>04/addSuccess</param-value>
+    </context-param>
+    <context-param>
+        <param-name>fail_view</param-name>
+        <param-value>04/addFail</param-value>
+    </context-param>
+    <context-param>
+        <param-name>count</param-name>
+        <param-value>10</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>org.zuel.course.ch02.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/greet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookmarkList03</servlet-name>
+        <servlet-class>org.zuel.course.ch03.BookmarkList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookmarkList03</servlet-name>
+        <url-pattern>/03/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookmarkAdd03</servlet-name>
+        <servlet-class>org.zuel.course.ch03.BookmarkAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookmarkAdd03</servlet-name>
+        <url-pattern>/03/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddSuccess03</servlet-name>
+        <servlet-class>org.zuel.course.ch03.AddSuccess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddSuccess03</servlet-name>
+        <url-pattern>/03/addSuccess</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddFail03</servlet-name>
+        <servlet-class>org.zuel.course.ch03.AddFail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFail03</servlet-name>
+        <url-pattern>/03/addFail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddForm</servlet-name>
+        <servlet-class>org.zuel.course.ch04.AddForm</servlet-class>
+        <init-param>
+            <param-name>category</param-name>
+            <param-value>Java,架构,数据库</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddForm</servlet-name>
+        <url-pattern>/04/addForm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddSuccess04</servlet-name>
+        <servlet-class>org.zuel.course.ch04.AddSuccess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddSuccess04</servlet-name>
+        <url-pattern>/04/addSuccess</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddFail04</servlet-name>
+        <servlet-class>org.zuel.course.ch04.AddFail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFail04</servlet-name>
+        <url-pattern>/04/addFail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login05</servlet-name>
+        <servlet-class>org.zuel.course.ch05.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login05</servlet-name>
+        <url-pattern>/05/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout05</servlet-name>
+        <servlet-class>org.zuel.course.ch05.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout05</servlet-name>
+        <url-pattern>/05/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login06</servlet-name>
+        <servlet-class>org.zuel.course.ch06.controller.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login06</servlet-name>
+        <url-pattern>/06/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout06</servlet-name>
+        <servlet-class>org.zuel.course.ch06.controller.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout06</servlet-name>
+        <url-pattern>/06/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookmarkList06</servlet-name>
+        <servlet-class>org.zuel.course.ch06.controller.BookmarkList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookmarkList06</servlet-name>
+        <url-pattern>/06/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookmarkAdd06</servlet-name>
+        <servlet-class>org.zuel.course.ch06.controller.BookmarkAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookmarkAdd06</servlet-name>
+        <url-pattern>/06/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookmarkDel06</servlet-name>
+        <servlet-class>org.zuel.course.ch06.controller.BookmarkDel</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookmarkDel06</servlet-name>
+        <url-pattern>/06/del</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

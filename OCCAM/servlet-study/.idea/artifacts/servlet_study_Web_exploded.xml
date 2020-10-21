@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="servlet-study:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/servlet_study_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="servlet-study/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="servlet-study" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: cn.hutool:hutool-all:4.5.6" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

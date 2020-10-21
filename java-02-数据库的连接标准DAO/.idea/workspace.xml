@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27287c49-e278-4f83-8ceb-fa589aad8da5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SPD8FUADzpO9sGnhd4DHX7pkJv" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaWeb01-Demo" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.demo">
+    <configuration name="InsertSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mysqlTest.STU_Dao.InsertSQL" />
+      <module name="java-02-数据库的连接" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mysqlTest.STU_Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySQLDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mysqlTest.STU_Dao.MySQLDemo" />
+      <module name="java-02-数据库的连接" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mysqlTest.STU_Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuerySQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mysqlTest.STU_Dao.QuerySQL" />
+      <module name="java-02-数据库的连接" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mysqlTest.STU_Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mysqlTest.Example.demo" />
+      <module name="java-02-数据库的连接" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mysqlTest.Example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="servlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mysqlTest.Example.servlet" />
+      <module name="java-02-数据库的连接" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mysqlTest.Example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.demo" />
+        <item itemvalue="Application.servlet" />
+        <item itemvalue="Application.InsertSQL" />
+        <item itemvalue="Application.QuerySQL" />
+        <item itemvalue="Application.MySQLDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27287c49-e278-4f83-8ceb-fa589aad8da5" name="Default Changelist" comment="" />
+      <created>1571456175907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571456175907</updated>
+      <workItem from="1571456178919" duration="559000" />
+      <workItem from="1571737559240" duration="2229000" />
+      <workItem from="1571763538253" duration="1000000" />
+      <workItem from="1571920209093" duration="1387000" />
+      <workItem from="1571934081835" duration="60000" />
+      <workItem from="1572055315701" duration="149000" />
+      <workItem from="1572055589133" duration="900000" />
+      <workItem from="1572058043712" duration="21509000" />
+      <workItem from="1572083653719" duration="161000" />
+      <workItem from="1572263707749" duration="3151000" />
+      <workItem from="1572447969962" duration="2619000" />
+      <workItem from="1572663193963" duration="3008000" />
+      <workItem from="1572859822822" duration="681000" />
+      <workItem from="1572861025266" duration="2111000" />
+      <workItem from="1572955823527" duration="3533000" />
+      <workItem from="1573272031830" duration="4541000" />
+      <workItem from="1573281143143" duration="326000" />
+      <workItem from="1573281555489" duration="3071000" />
+      <workItem from="1573744441804" duration="82000" />
+      <workItem from="1573786303126" duration="19000" />
+      <workItem from="1574480245085" duration="387000" />
+      <workItem from="1574484655172" duration="4659000" />
+      <workItem from="1574498279908" duration="248000" />
+      <workItem from="1574699817294" duration="1465000" />
+      <workItem from="1574783184441" duration="712000" />
+      <workItem from="1575207656940" duration="709000" />
+      <workItem from="1575820394725" duration="1759000" />
+      <workItem from="1576175659022" duration="152000" />
+      <workItem from="1576175858352" duration="627000" />
+      <workItem from="1576176637955" duration="1306000" />
+      <workItem from="1576178932700" duration="1167000" />
+      <workItem from="1576893450083" duration="106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

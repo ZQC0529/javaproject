@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css"?>
+<students xmlns:HTML="http://www.w3.org/Profiles/XHTML-transitional">
+   <HTML:Script Language="JavaScript">
+       function test()
+       	{
+ 		alert("Hello," + document.myform.txt1.value);
+		}
+   </HTML:Script>
+   <student>
+      <HTML:form name="myform">
+         <HTML:input type="text" name="txt1"/>
+         <HTML:br/>
+         <HTML:input type="text" name="txt2"/>
+         <HTML:br/>
+         <HTML:input type="button" value="Click Me!" name="btn1" onclick="test()"/>
+      </HTML:form>
+   </student>
+</students>

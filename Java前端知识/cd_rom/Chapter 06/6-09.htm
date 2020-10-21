@@ -1,0 +1,79 @@
+<HTML>
+<SCRIPT>
+function batchReceive()
+{
+	var strValue = "";
+	var strText = "";
+	for(var i=receiveFrm.selBatch.options.length-1;i>=0;i--)
+	{
+		if(receiveFrm.selBatch.options(i).selected==1)
+		{
+			strValue = receiveFrm.selBatch.options(i).value;
+			strText = receiveFrm.selBatch.options(i).text;
+			var oOption = document.createElement("OPTION");
+			oOption.text =strText 
+			oOption.value =strValue 
+			if(strText == "")
+				alert("请选择一个选项！");
+			else
+				sel(strText,strValue);
+		}
+	}
+}
+function sel(strInput,strInputValue)
+{
+	oInput = document.all("tblReceive").all.tags("select");
+	for (j = 0;j < oInput.length; j++)
+	{
+		var strText = "";
+		for(var i=oInput[j].options.length-1;i>=0;i--)
+		{
+				strValue = oInput[j].options(i).value;
+				strText = oInput[j].options(i).text;
+				oInput[j].options.remove(i);
+		}
+				var oOption = document.createElement("OPTION");
+				oOption.text =strInput 
+				oOption.value =strInputValue
+				oInput[j].add(oOption);
+		for(var i=receiveFrm.selBatch.options.length-1;i>=0;i--)
+		{
+				strValue = receiveFrm.selBatch.options(i).value;
+				strText = receiveFrm.selBatch.options(i).text;
+				if(strText!=strInput)
+				{
+				var oOption = document.createElement("OPTION");
+				oOption.text =strText
+				oOption.value =strValue 
+				oInput[j].add(oOption);
+				}
+		}
+	}
+}
+</SCRIPT>
+<BODY><FORM NAME="receiveFrm">
+<SELECT NAME="selBatch" ONCHANGE="batchReceive()" STYLE="width:150">
+          <OPTION VALUE=""></OPTION>
+			<OPTION VALUE="5">归档</OPTION>
+			<OPTION VALUE="6">退回</OPTION>
+			<OPTION VALUE="7">待销</OPTION>
+			<OPTION VALUE="8">资料</OPTION>
+		</SELECT>
+<TABLE BORDER=1 id="tblReceive">
+<TR >
+	<TD STYLE="width:40px">序号</TD>
+	<TD NAME="FillingStatus" >整理状态</TD>
+</TR><TR>
+	<TD>1</TD>
+	<td><select name="selReceive1" style="width:100">
+		<OPTION VALUE=""></OPTION>
+		</SELECT>
+	</TD></TR>
+	<TR>
+	<TD>2</TD>
+	<td><select name="selReceive1" style="width:100">
+		<OPTION VALUE=""></OPTION>
+		</SELECT>
+	</TD></TR>
+</TABLE>
+</FORM></HTML>

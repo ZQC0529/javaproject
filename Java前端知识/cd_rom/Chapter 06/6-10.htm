@@ -1,0 +1,10 @@
+<SCRIPT LANGUAGE="JavaScript">
+	var Shell = new ActiveXObject("WScript.Shell") ;//
+	try{
+   	var cmd="mspaint.exe" ;//
+    	var aa = Shell.Run(cmd,1, true) ;//
+	}
+	catch(e){
+	   alert ("目录不存在文件！");
+	   }
+</SCRIPT>

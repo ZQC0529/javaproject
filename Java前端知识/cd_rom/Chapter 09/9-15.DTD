@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!ELEMENT 联系人 (姓名, EMAIL)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT EMAIL (#PCDATA)>

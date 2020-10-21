@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addressbook>
+  <person sex="male">
+    <name>张三</name>
+    <email>zhs@xml.net.cn</email>
+  </person>
+  <person sex="male">
+    <name>李四</name>
+    <email>ls@xml.net.cn</email>
+  </person>
+<person><name>zhourunfa</name><email>zhouruanfa@tom.com</email></person></addressbook>

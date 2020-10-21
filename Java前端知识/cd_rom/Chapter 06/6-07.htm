@@ -1,0 +1,24 @@
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+function mycheck(){
+	if (document.myform.xuehao.value=="") {
+	    alert("请输入学号!");
+	    document.myform.xuehao.focus();
+	    return false;
+	  } 
+        if (document.myform.xuehao.value.length!=13) {
+	    alert("标准学号为13位，您目前输入的学号为" + 
+		document.myform.xuehao.value.length + "位");
+	    document.myform.xuehao.focus();
+	    return false;
+	  } 
+}
+</SCRIPT><BODY>
+<FORM METHOD="POST" ACTION="do_submit.htm" 
+onSubmit="return mycheck()" name="myform">
+	<INPUT type="text" name="xuehao" size="20"><BR>
+	<INPUT TYPE="SUBMIT" VALUE="提交" NAME="B1">
+	<INPUT TYPE="RESET" VALUE="重置" NAME="B2"></P>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,113 @@
+<HTML>
+<BODY>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function addcell() //添加新的单元格
+{
+	//插入新的一行
+	oTargetRow = document.all("mytable1").insertRow();
+	for(var k = 0; k < document.all("mytable1").rows(0).cells.length; k++)
+	{
+		var oCell = oTargetRow.insertCell();
+		if(k == 0)
+		{
+			oCell.innerHTML = "<input type='checkbox'>"
+		}
+		else
+		{
+			oCell.innerHTML = k;
+		}
+	}
+}
+function checkall()  //选中所有的单元格
+{
+	var eInput = document.all("mytable1").all.tags("INPUT");
+	for(var i = 0; i < eInput.length; i++)
+	{
+		eInput[i].checked = true;
+	}
+
+}
+function uncheckall() 
+{
+	var eInput = document.all("mytable1").all.tags("INPUT");
+	for(var i = 0; i < eInput.length; i++)
+	{
+		eInput[i].checked = false;
+	}
+}
+function copycell() //拷贝单元格
+{
+	var eInput = document.all("mytable1").all.tags("INPUT");
+	var oTargetRow = null;
+	for(var i = 0; i < eInput.length; i++)
+	{
+		if(eInput[i].checked)
+		{
+			var oSourceRow = eInput[i].parentElement.parentElement;
+			//插入新的一行
+			oTargetRow = document.all("mytable2").insertRow();
+			for(var k = 0;k < document.all("mytable1").rows(0).cells.length; k++)
+			{
+				var oCell = oTargetRow.insertCell();
+				oCell.innerHTML = oSourceRow.cells(k).innerHTML;
+			}
+		}
+	}
+}
+function delcell() //删除单元格
+{
+	var eInput = document.all("mytable1").all.tags("INPUT");
+	for(var i = eInput.length-1;i >= 0;i--)
+	{
+		if(eInput[i].checked)
+		{
+			var oSourceRow = eInput[i].parentElement.parentElement;
+			document.all("mytable1").deleteRow(oSourceRow.rowIndex);
+		}
+	}
+}
+function refresh() //刷新
+{
+	frmRefresh.submit();
+}
+</SCRIPT>
+<INPUT TYPE="BUTTON" VALUE="刷新" ONCLICK="refresh()">
+<INPUT TYPE="BUTTON" VALUE="全选" ONCLICK="checkall()">
+<INPUT TYPE="BUTTON" VALUE="不选" ONCLICK="uncheckall()">
+<INPUT TYPE="BUTTON" VALUE="添加" ONCLICK="addcell()">
+<INPUT TYPE="BUTTON" VALUE="拷贝" ONCLICK="copycell()">
+<INPUT TYPE="BUTTON" VALUE="移动" ONCLICK="copycell();delcell()">
+<INPUT TYPE="BUTTON" VALUE="删除" ONCLICK="delcell()">
+<TABLE ID="mytable1" BORDER="1" width="320">
+	<TR>
+		<TD width="20"><INPUT TYPE="CHECKBOX"></TD>
+		<TD width="100">1</TD>
+		<TD width="100">1</TD>
+		<TD width="100">1</TD>
+	</TR>
+	<TR>
+		<TD><INPUT TYPE="CHECKBOX"></TD>
+		<TD>2</TD>
+		<TD>2</TD>
+		<TD>2</TD>
+	</TR>
+</TABLE>
+<BR>
+<TABLE ID="mytable2" BORDER="1" width="320">
+	<TR>
+		<TD width="20"><INPUT TYPE="CHECKBOX"></TD>
+		<TD width="100">你好！</TD>
+		<TD width="100">你好！</TD>
+		<TD width="100">你好！</TD>
+	</TR>
+	<TR>
+		<TD><INPUT TYPE="CHECKBOX"></TD>
+		<TD>你坏！</TD>
+		<TD>你好！</TD>
+		<TD>你好！</TD>
+	</TR>
+</TABLE>
+<FORM NAME="frmRefresh" ACTION="6-01.htm">
+</FORM>
+</BODY>
+</HTML>

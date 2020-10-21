@@ -1,0 +1,6 @@
+1、在Eclipse中导入工程，可以通过Eclipse中的菜单File→Import→Existing Projects intoWorkspace中选择Project；
+2、在MySQL中创建数据库，使用MySQL Control Center执行database目录下的dbscript.sql数据库脚本文件创建数据库SQL语句创建数据库和表及数据；
+3、设置数据库连接配置，修改doc目录下的exam.xml文件，将其中的数据库用户名和密码设置为实际的用户名和密码；
+4、将doc目录下的exam.xml文件拷贝到Tomcat的安装目录下的conf\Catalina\localhost文件夹下，并修改exam.xml文件中的docBase，将该值指向该工程目录，如"F:\jsp\21\WebRoot"；
+5、确保Tomcat安装目录的common\lib下mysql-connector-java-3.0.16-ga-bin.jar类包文件，如果没有拷贝WebRoot\WEB-INF\lib目录下的mysql-connector-java-3.0.16-ga-bin.jar类包文件到Tomcat安装目录的common\lib下；
+6、启动Tomcat，在浏览器输入http://localhost:8080/exam，使用账号s0001，密码s0001登陆，后台管理使用账号admin，密码dmin登陆。
